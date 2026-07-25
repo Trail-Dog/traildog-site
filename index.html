@@ -1,9 +1,126 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Trail Dog</title>
-<style>body{background:#000;color:rgba(255,255,255,.85);font-family:-apple-system,system-ui,sans-serif;max-width:640px;margin:0 auto;padding:60px 24px;line-height:1.6}h1{color:#fff}a{color:#12FFD4}</style>
-</head><body>
-<h1>Trail Dog 🐕</h1>
-<p>A mountain-bike ride-progression app. Ride · Progress · Repeat.</p>
-<p><a href="privacy.html">Privacy Policy</a> · <a href="support.html">Support</a></p>
-</body></html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trail Dog — MTB ride progression</title>
+<meta name="description" content="Trail Dog is a mountain-bike ride-progression app for iPhone. Record a ride with your phone in your pocket; get honest stats, the named trails you rode, and a Rider Index that grows as you ride.">
+<style>
+  :root {
+    --bg: #000;
+    --ink: rgba(255,255,255,.85);
+    --ink-strong: #fff;
+    --ink-muted: rgba(255,255,255,.45);
+    --teal: #12FFD4;
+    --pink: #FF2D9B;
+    --line: rgba(255,255,255,.12);
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg); color: var(--ink);
+    font-family: -apple-system, system-ui, sans-serif;
+    max-width: 640px; margin: 0 auto; padding: 56px 24px 40px;
+    line-height: 1.6;
+  }
+  a { color: var(--teal); }
+
+  /* Hero */
+  header { margin-bottom: 40px; }
+  .emblem {
+    display: inline-block; font-weight: 800; letter-spacing: .04em;
+    color: var(--bg); background: linear-gradient(135deg, var(--teal), var(--pink));
+    border-radius: 12px; padding: 6px 12px; font-size: 1.05em; margin-bottom: 18px;
+  }
+  h1 { color: var(--ink-strong); font-size: 2em; line-height: 1.15; margin: 0 0 12px; }
+  .tagline { font-size: 1.15em; margin: 0; }
+  .tagline strong { color: var(--ink-strong); }
+  .rpr { color: var(--ink-muted); margin-top: 10px; letter-spacing: .06em; }
+
+  /* Features */
+  ul.features { list-style: none; margin: 40px 0; padding: 0; }
+  ul.features li {
+    border-top: 1px solid var(--line); padding: 18px 0;
+  }
+  ul.features li:last-child { border-bottom: 1px solid var(--line); }
+  ul.features h2 { color: var(--ink-strong); font-size: 1em; margin: 0 0 4px; }
+  ul.features h2 span { color: var(--pink); margin-right: 8px; }
+  ul.features p { margin: 0; font-size: .95em; }
+
+  /* Coming soon */
+  .coming {
+    border: 1px solid var(--line); border-radius: 14px;
+    padding: 20px 22px; margin: 40px 0; text-align: center;
+  }
+  .coming strong { color: var(--teal); display: block; font-size: 1.1em; }
+  .coming span { color: var(--ink-muted); font-size: .95em; }
+
+  /* Privacy */
+  .privacy { font-size: .95em; }
+  .privacy strong { color: var(--ink-strong); }
+
+  footer {
+    margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--line);
+    color: var(--ink-muted); font-size: .9em;
+  }
+  @media (max-width: 420px) {
+    body { padding-top: 40px; }
+    h1 { font-size: 1.7em; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="emblem">TD</div>
+  <h1>Trail Dog 🐕</h1>
+  <p class="tagline">A mountain-bike <strong>ride-progression</strong> app for iPhone.
+  Record a ride with your phone in your pocket — get the payoff after.</p>
+  <p class="rpr">Ride · Progress · Repeat</p>
+</header>
+
+<ul class="features">
+  <li>
+    <h2><span>—</span>Pocket recording</h2>
+    <p>Press START, pocket your phone, ride. Recording keeps going with the screen
+    locked — no fiddling mid-trail.</p>
+  </li>
+  <li>
+    <h2><span>—</span>A celebration, not a spreadsheet</h2>
+    <p>Finish a ride and get a Rollup of what you actually achieved — the moments
+    worth celebrating, front and centre.</p>
+  </li>
+  <li>
+    <h2><span>—</span>Honest stats</h2>
+    <p>Distance, climbing, top speed, steepest pitch, moving time — numbers that
+    pass the sniff test against the ride you just did.</p>
+  </li>
+  <li>
+    <h2><span>—</span>The trails you actually rode</h2>
+    <p>Your ride is matched to real, named trails from OpenStreetMap — not just a
+    line through the woods.</p>
+  </li>
+  <li>
+    <h2><span>—</span>Rider Index — five attributes that grow</h2>
+    <p>A game-style rider profile: Flow, Cornering, Trail Gnar, Speed and Air,
+    climbing as you ride. Every gain traces back to something you did.</p>
+  </li>
+</ul>
+
+<div class="coming">
+  <strong>Coming to the App Store — September 2026</strong>
+  <span>Free · iPhone · No ads</span>
+</div>
+
+<p class="privacy"><strong>Your rides are yours.</strong> No ads, no tracking, no selling
+your data, and nothing about your riding is ever made public. To name your trails and show
+local conditions the app does send ride coordinates to OpenStreetMap, Open-Meteo and Apple's
+geocoder. The <a href="privacy.html">privacy policy</a> spells out every request, in plain
+English.</p>
+
+<footer>
+  <p><a href="privacy.html">Privacy Policy</a> · <a href="support.html">Support</a> ·
+  <a href="mailto:jackmecklenburgh@gmail.com">jackmecklenburgh@gmail.com</a></p>
+</footer>
+
+</body>
+</html>
