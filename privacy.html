@@ -9,62 +9,122 @@
          max-width:640px; margin:0 auto; padding:40px 24px; line-height:1.6; }
   h1 { color:#fff; font-size:1.6em; } h2 { color:#FF2D9B; font-size:1.1em; margin-top:2em; }
   a { color:#12FFD4; } .muted { color:rgba(255,255,255,.45); font-size:.9em; }
+  table { border-collapse:collapse; width:100%; margin:1em 0; font-size:.95em; }
+  th, td { text-align:left; padding:8px 10px; border-bottom:1px solid rgba(255,255,255,.12);
+           vertical-align:top; }
+  th { color:#fff; font-weight:600; white-space:nowrap; }
 </style>
 </head>
 <body>
 <h1>Trail Dog — Privacy Policy</h1>
-<p class="muted">Last updated: 9 July 2026</p>
+<p class="muted">Last updated: 2 August 2026</p>
 
-<p><strong>The short version: your rides stay on your phone. Trail Dog has no accounts, no
-analytics, no ads, and no server. Nothing leaves your device unless you explicitly share it.</strong></p>
+<p><strong>The short version: Trail Dog records your mountain-bike rides on your phone. If you
+create an account, your rides, your profile and your photo are also stored on our server, so
+they survive a lost phone and can be shared with friends you choose. We don't sell your data,
+we don't run ads, and we don't use third-party analytics or tracking SDKs. You can delete your
+account and everything in it from inside the app.</strong></p>
 
-<h2>What the app collects, and where it lives</h2>
-<p>While recording a ride, Trail Dog collects your <strong>location</strong> (GPS route, speed,
-altitude) and <strong>motion-sensor data</strong> (accelerometer, gyroscope, barometer) to compute
-your ride stats and progression. All of it is stored in a private database <strong>on your device
-only</strong>. Deleting the app deletes all of it.</p>
+<h2>Using Trail Dog without an account</h2>
+<p>You can record rides without signing in. Everything stays in a private database on your
+device, and deleting the app deletes it. The only things that leave your phone are the network
+requests described under <a href="#services">Services we send data to</a>.</p>
+
+<h2>What we collect while you ride</h2>
+<p>While you are recording a ride — and only then — Trail Dog collects your
+<strong>location</strong> (GPS route, speed, altitude) and <strong>motion-sensor data</strong>
+(accelerometer, gyroscope, barometer). These are what produce your ride stats, your descent
+scores and your Rider Index.</p>
 
 <h2>Background location</h2>
-<p>Recording continues while your phone is locked or in your pocket — that's what the
-"always"-style location permission is for. Location is only collected while you are actively
-recording a ride you started. The app never tracks you outside a recording.</p>
+<p>Recording continues while your phone is locked or in your pocket — that is what the
+"always"-style location permission is for. Location is collected <strong>only while a ride you
+started is recording</strong>. Trail Dog does not track you at any other time.</p>
 
-<h2>Network requests the app makes</h2>
-<p>Trail Dog makes three kinds of anonymous, keyless requests to display ride information.
-None include your name, identifiers, or full ride data:</p>
+<h2>What we store on our server, if you have an account</h2>
+<p>Creating an account turns on sync. From then on the following is stored on our servers:</p>
+
+<table>
+  <tr><th>Account</th><td>Your email address — or the private relay address Apple gives us if
+  you use Sign in with Apple — and which sign-in method you used.</td></tr>
+  <tr><th>Profile</th><td>Your display name, your handle, your home area if you set one, your
+  Rider Index, level and seven attribute scores, and your profile photo.</td></tr>
+  <tr><th>Rides</th><td>The full ride: your GPS route at recording precision, motion-sensor
+  data, timings, distance and elevation, computed scores, detected trail names, the place name
+  and the weather summary.</td></tr>
+  <tr><th>Descents</th><td>Each scored descending run — score, length, drop, duration, and an
+  identifier derived from its geometry. This is what personal bests and comparison with friends
+  are built on.</td></tr>
+  <tr><th>Friends</th><td>Who you have sent requests to, who has sent them to you, and who you
+  are friends with.</td></tr>
+  <tr><th>Devices</th><td>An install identifier, your device name, model, iOS version and app
+  version, so we can tell which build a problem came from.</td></tr>
+  <tr><th>Logs</th><td>Technical records of what the app did — see
+  <a href="#logs">Diagnostic logs</a>.</td></tr>
+</table>
+
+<h2 id="visible">What other people can see</h2>
 <ul>
-  <li><strong>Weather</strong> — your approximate coordinates are sent to
-  <a href="https://open-meteo.com">Open-Meteo</a> to fetch current conditions.</li>
-  <li><strong>Place names</strong> — your ride's start coordinate is sent to Apple's geocoding
-  service to name the ride's location.</li>
-  <li><strong>Trail names</strong> — your ride's bounding box is sent to the
-  <a href="https://www.openstreetmap.org">OpenStreetMap</a> Overpass API to match the trails you
-  rode. Trail data © OpenStreetMap contributors.</li>
+  <li><strong>Your profile photo, display name and handle</strong> can be seen by any signed-in
+  Trail Dog rider. That is how riders find each other by handle, and how a friend request shows
+  who it is from.</li>
+  <li><strong>Your Rider Index, attribute scores and ride summaries</strong> are visible to
+  riders you have accepted as friends.</li>
+  <li><strong>Your GPS routes are never visible to anyone else.</strong> Ride tracks are
+  readable only by the account that recorded them.</li>
+  <li>None of it is public on the open internet — all of the above requires being signed in to
+  Trail Dog.</li>
 </ul>
-<p>Map imagery is provided by Apple Maps as part of iOS.</p>
 
-<h2>Sharing — always your choice</h2>
-<p>The share button exports a ride file (its GPS route, sensor data and scores) so <em>you</em>
-can send it to whoever you choose — for example the developer, to help improve the scoring.
-Be aware a ride file contains your precise route, which may start near your home. Nothing is
-ever shared automatically.</p>
+<h2 id="logs">Diagnostic logs</h2>
+<p>The app records technical logs — sync results, errors, timings, app version and ride
+identifiers — and uploads them with your account so we can diagnose crashes and sync failures.
+Before anything is written, email addresses, authentication tokens and long key-like strings
+are stripped out automatically, and precise coordinates are never written to logs at all. Logs
+are kept for <strong>90 days</strong> and then deleted.</p>
 
-<h2>Backups</h2>
-<p>The in-app Export Backup button creates a file you control. Your device's own iOS/iCloud
-backup may also include the app's data, governed by Apple's terms.</p>
-
-<h2>What Trail Dog doesn't do</h2>
+<h2 id="services">Services we send data to</h2>
 <ul>
-  <li>No user accounts, no sign-in</li>
-  <li>No analytics, tracking, or advertising SDKs</li>
-  <li>No selling or sharing of data with third parties</li>
+  <li><strong>Supabase</strong> — hosts our database, file storage and sign-in. Everything in
+  the table above is stored there on our behalf.</li>
+  <li><strong>Apple</strong> — Sign in with Apple, if you choose it; geocoding, to turn your
+  ride's start point into a place name; and Apple Maps imagery.</li>
+  <li><strong>Open-Meteo</strong> — receives approximate ride coordinates and returns the
+  weather for your ride. No account or identifier is sent.</li>
+  <li><strong>OpenStreetMap (Overpass API)</strong> — receives your ride's bounding box to
+  match the trails you rode. No account or identifier is sent. Trail data © OpenStreetMap
+  contributors.</li>
 </ul>
+<p>We do not use advertising or analytics SDKs, and we do not sell or rent your data.</p>
+
+<h2>Sharing and backups — always your choice</h2>
+<p>The share button exports a ride file containing its GPS route, sensor data and scores, so
+<em>you</em> can send it to whoever you choose. Be aware that a ride file contains your precise
+route, which may start near your home. The Export Backup button creates a file you control.
+Your device's own iOS/iCloud backup may also include the app's data, governed by Apple's terms.
+Nothing is ever shared automatically.</p>
+
+<h2>Deleting your data</h2>
+<p><strong>Delete Account</strong> in Settings removes your account and everything listed
+above: profile, rides, descents, friendships, device records, logs, and every stored file —
+ride tracks, raw sensor archives and your profile photo. If you signed in with Apple, we also
+revoke that connection with Apple. This cannot be undone.</p>
+<p>Rides already on your phone stay there until you delete the app, which removes the local
+copy.</p>
+
+<h2>Your rights</h2>
+<p>If you are in the UK or EU: we process your ride and profile data to provide the app you
+asked for (performance of a contract), and diagnostic logs to keep it working (legitimate
+interests). You have the right to access, correct, export or delete your data. Export Backup
+and Delete Account do the last two immediately from inside the app; for anything else, contact
+us below.</p>
 
 <h2>Children</h2>
-<p>Trail Dog is not directed at children under 13.</p>
+<p>Trail Dog is not directed at children under 13, and we do not knowingly collect their data.</p>
 
 <h2>Changes &amp; contact</h2>
 <p>If this policy changes, the update will appear on this page with a new date.
-Questions: <a href="mailto:jackmecklenburgh@gmail.com">jackmecklenburgh@gmail.com</a></p>
+Questions, or any request about your data:
+<a href="mailto:jackmecklenburgh@gmail.com">jackmecklenburgh@gmail.com</a></p>
 </body>
 </html>
