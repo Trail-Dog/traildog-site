@@ -1,9 +1,591 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Trail Dog</title>
-<style>body{background:#000;color:rgba(255,255,255,.85);font-family:-apple-system,system-ui,sans-serif;max-width:640px;margin:0 auto;padding:60px 24px;line-height:1.6}h1{color:#fff}a{color:#12FFD4}</style>
-</head><body>
-<h1>Trail Dog 🐕</h1>
-<p>A mountain-bike ride-progression app. Ride · Progress · Repeat.</p>
-<p><a href="privacy.html">Privacy Policy</a> · <a href="support.html">Support</a></p>
+<html><head>
+<title>Trail Dog — Ride. Progress. Repeat.</title>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="assets/492d8d19-1d33-4ed2-92b3-bbf7e4b10621.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<style>/* thai */
+@font-face {
+  font-family: 'Chakra Petch';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("assets/6bff0ff0-967d-4d10-9bb3-103d83238127.woff2") format('woff2');
+  unicode-range: U+02D7, U+0303, U+0331, U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Chakra Petch';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("assets/0c83e2c7-1620-4a60-b9c9-c9d2c35f4ef0.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Chakra Petch';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("assets/d784ef5a-1bae-471e-8914-6318c2a9026f.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Chakra Petch';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("assets/72a131d0-8398-4a14-92a2-88d79611b207.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* thai */
+@font-face {
+  font-family: 'Chakra Petch';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/3db170dc-ba10-4560-b8aa-2b5e5dc581e5.woff2") format('woff2');
+  unicode-range: U+02D7, U+0303, U+0331, U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Chakra Petch';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fa4fcc34-2275-441f-b69f-96059d3a891a.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Chakra Petch';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/b2253d1c-f904-48ce-81d1-7830b1dabdc6.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Chakra Petch';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/04fc2aef-f6cc-4f38-9911-4d87eac37462.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* thai */
+@font-face {
+  font-family: 'Chakra Petch';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/034939a2-144d-42e3-84bc-d5daf430d0a9.woff2") format('woff2');
+  unicode-range: U+02D7, U+0303, U+0331, U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Chakra Petch';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/0404e000-8033-40ce-94fd-070fb481bb94.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Chakra Petch';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/717bc58c-4325-4aa5-a1ef-1aa646d2f6f6.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Chakra Petch';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fb4c1395-5d7e-48ea-9b77-b6548f4d43e8.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* thai */
+@font-face {
+  font-family: 'Chakra Petch';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/e3ba587f-300d-469e-80fe-a34db0bc52ac.woff2") format('woff2');
+  unicode-range: U+02D7, U+0303, U+0331, U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Chakra Petch';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/d660339c-ccab-4a31-8c03-853b598893f6.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Chakra Petch';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/cda39400-22eb-4309-b69c-528eabc7199e.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Chakra Petch';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/62291c09-af3a-4d2e-a779-be8367854a3a.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* thai */
+@font-face {
+  font-family: 'Chakra Petch';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/68b1cccd-d82c-47f4-bf9f-2ca3ad009c2d.woff2") format('woff2');
+  unicode-range: U+02D7, U+0303, U+0331, U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Chakra Petch';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/9f91a3ef-317c-481e-bd5d-3a87a704a9b0.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Chakra Petch';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/076f8314-0f31-41db-895a-7027d5ceef14.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Chakra Petch';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/d70eafb4-ad0d-43e0-b1ec-1d1c20db375e.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Michroma';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/5bbde61a-4248-4c85-b4a0-7cdeff44b4b5.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Michroma';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/d2f7d4bb-c8a4-4064-a98e-61a123de6a27.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/0833913e-19f4-42e2-8d6e-c57477751afa.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/28784bca-4493-4157-b125-102ec84d1d78.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/cb8571e7-f004-4230-bb76-6f01e5a925ae.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/bed652d8-c107-4694-885a-dc1c89a768ed.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/a5a36008-b5f8-4d69-bfb9-7634fea639a8.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/99961910-d275-4c3c-85e9-a3e294237f62.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style>
+  * { box-sizing:border-box; }
+  body { margin:0; background:#000; }
+  a { color:#12ffd4; text-decoration:none; }
+  a:hover { color:#a3ff12; }
+  @keyframes glowpulse { 0%,100%{ opacity:.5;} 50%{ opacity:.9;} }
+  @keyframes recpulse { 0%,100%{ opacity:1;} 50%{ opacity:.3;} }
+  @keyframes marquee { 0%{ transform:translateX(0);} 100%{ transform:translateX(-50%);} }
+  @media (max-width: 980px) {
+    .td-hero, .td-split, .td-grid3 { grid-template-columns: 1fr !important; }
+    .td-hero { padding: 60px 24px 40px !important; }
+    .td-split { padding: 60px 24px !important; gap: 40px !important; }
+    .td-h1 { font-size: 34px !important; }
+    .td-h2 { font-size: 24px !important; }
+    .td-cta-h { font-size: 28px !important; }
+    .td-nav { padding: 12px 20px !important; }
+    .td-footer { flex-direction: column !important; gap: 14px !important; text-align: center; }
+  }
+  @media (max-width: 520px) {
+    .td-h1 { font-size: 27px !important; }
+    .td-h2 { font-size: 20px !important; }
+    .td-cta-h { font-size: 22px !important; }
+    .td-hero, .td-split { padding-left: 18px !important; padding-right: 18px !important; }
+  }
+</style>
+</helmet>
+
+<div style="font-family:'Chakra Petch',sans-serif;background:#000;color:#fff;min-height:100vh;">
+
+  <!-- ============ NAV ============ -->
+  <div class="td-nav" style="position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:16px 40px;background:rgba(0,0,0,.72);backdrop-filter:blur(24px);border-bottom:1px solid rgba(255,255,255,.08);">
+    <div style="display:flex;align-items:center;gap:14px;">
+      <img src="assets/ffce3ace-3cae-4ec6-afda-9d4d9176649e.png" alt="Trail Dog" style="width:40px;height:40px;border-radius:12px;object-fit:cover;object-position:50% 18%;border:2px solid transparent;background:linear-gradient(#000,#000) padding-box,linear-gradient(135deg,#ff2d9b,#a020ff,#12ffd4,#a3ff12) border-box;">
+      <div style="font-family:'Michroma',sans-serif;font-size:16px;letter-spacing:.06em;text-shadow:2px 2px 0 rgba(163,255,18,.55);">TRAIL DOG</div>
+    </div>
+    <div style="display:flex;align-items:center;">
+      <a href="https://testflight.apple.com/join/JmuvS9DU" style="text-decoration:none;color:inherit;display:inline-block"><div style="padding:10px 22px;border-radius:100px;background:linear-gradient(135deg,#ff2d9b,#a020ff);color:#000;font-weight:700;font-family:'Chakra Petch',sans-serif;font-size:13px;letter-spacing:.08em;box-shadow:inset 0 1px 4px rgba(255,255,255,.4);cursor:pointer;">GET THE APP</div></a>
+    </div>
+  </div>
+
+  <!-- ============ HERO ============ -->
+  <div style="position:relative;overflow:hidden;background:radial-gradient(120% 90% at 75% 20%,#2a0a26,#000 60%);">
+    <div class="td-hero" style="max-width:1200px;margin:0 auto;padding:90px 40px 70px;display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center;">
+      <div>
+        <div style="display:inline-block;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.3em;color:#12ffd4;border:1px solid rgba(18,255,212,.4);padding:6px 14px;border-radius:100px;margin-bottom:26px;">RIDE · PROGRESS · REPEAT</div>
+        <h1 class="td-h1" style="font-family:'Michroma',sans-serif;font-size:54px;line-height:1.08;margin:0;text-shadow:4px 4px 0 rgba(163,255,18,.5);">SO YOUR MATES LEFT YOU IN THEIR DUST. <span style="background:linear-gradient(120deg,#ff2d9b,#a020ff,#12ffd4,#a3ff12);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none;">AGAIN.</span></h1>
+        <p style="font-size:17px;line-height:1.65;color:rgba(255,255,255,.6);margin:26px 0 0;max-width:480px;">Trail Dog turns every ride into cold, hard, slightly judgemental numbers. Get out there and shred until "waiting at the bottom" is someone else's job.</p>
+        <div style="display:flex;gap:14px;margin-top:34px;align-items:center;">
+          <a href="https://testflight.apple.com/join/JmuvS9DU" style="text-decoration:none;color:inherit;display:inline-block"><div style="padding:16px 34px;border-radius:100px;background:linear-gradient(135deg,#ff2d9b,#a020ff);color:#000;font-weight:700;font-size:15px;letter-spacing:.08em;box-shadow:inset 0 2px 6px rgba(255,255,255,.4),0 0 40px rgba(255,45,155,.35);cursor:pointer;">DOWNLOAD FOR iOS</div></a>
+        </div>
+      </div>
+      <div style="position:relative;display:flex;justify-content:center;perspective:1400px;padding:30px 0;">
+        <div style="position:absolute;inset:8%;border-radius:50%;background:radial-gradient(circle,rgba(255,45,155,.3),transparent 70%);filter:blur(44px);animation:glowpulse 3s ease-in-out infinite;"></div>
+        <!-- angled 3D phone · profile screen -->
+        <div style="position:relative;width:310px;height:640px;border-radius:52px;background:linear-gradient(145deg,#26262e,#0c0c10 40%,#1c1c24);padding:11px;transform:rotateY(-22deg) rotateX(6deg) rotateZ(3deg);transform-style:preserve-3d;box-shadow:-40px 60px 90px rgba(0,0,0,.75),0 0 0 2px #17171c,-2px 0 0 3px #2e2e38;">
+          <div style="position:absolute;top:22px;left:50%;transform:translateX(-50%);width:92px;height:26px;background:#000;border-radius:14px;z-index:30;"></div>
+          <div style="width:100%;height:100%;border-radius:42px;overflow:hidden;position:relative;background:radial-gradient(130% 90% at 50% -10%,#2a0a26,#000 55%);display:flex;flex-direction:column;">
+            <div style="display:flex;justify-content:space-between;align-items:center;padding:18px 24px 8px;font-family:'Space Mono',monospace;font-size:12px;font-weight:700;"><span></span><span></span></div>
+            <div style="flex:1;overflow:hidden;padding:10px 18px 26px;display:flex;flex-direction:column;gap:22px;">
+              <div style="display:flex;align-items:center;gap:12px;">
+                <img src="assets/ffce3ace-3cae-4ec6-afda-9d4d9176649e.png" alt="" style="width:44px;height:44px;border-radius:13px;object-fit:cover;object-position:50% 14%;border:2px solid transparent;background:linear-gradient(#000,#000) padding-box,linear-gradient(135deg,#ff2d9b,#a020ff,#12ffd4,#a3ff12) border-box;flex:none;">
+                <div style="font-family:'Michroma',sans-serif;font-size:15px;letter-spacing:.06em;flex:1;">DOGGY420</div>
+                <div style="width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;font-size:13px;color:rgba(255,255,255,.7);">⚙</div>
+              </div>
+              <div style="border-radius:20px;padding:16px 18px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);backdrop-filter:blur(20px);position:relative;overflow:hidden;">
+                <div style="position:absolute;inset:0;background:radial-gradient(90% 90% at 100% 0%,rgba(255,45,155,.35),transparent 60%);"></div>
+                <div style="position:relative;font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.3em;color:rgba(255,255,255,.55);">RIDER INDEX</div>
+                <div style="position:relative;display:flex;align-items:baseline;gap:7px;margin-top:6px;"><span style="font-family:'Michroma',sans-serif;font-size:40px;line-height:1;text-shadow:3px 3px 0 rgba(163,255,18,.55);">53</span><span style="font-family:'Michroma',sans-serif;font-size:16px;color:rgba(255,255,255,.4);">/ 100</span></div>
+                <div style="position:relative;font-size:10.5px;line-height:1.5;color:rgba(255,255,255,.6);margin-top:8px;">You're a technical wizard who loves staying planted when it gets rowdy and railing every corner.</div>
+                <div style="position:relative;display:inline-block;margin-top:10px;font-size:10px;color:#12ffd4;font-family:'Space Mono',monospace;border:1px solid rgba(18,255,212,.4);padding:3px 10px;border-radius:100px;">▲ +5 last ride</div>
+              </div>
+              <div style="display:flex;flex-direction:column;gap:15px;padding:0 2px;">
+                <div style="display:flex;align-items:center;gap:12px;"><span style="width:74px;font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.08em;color:rgba(255,255,255,.7);flex:none;">SPEED</span><div style="flex:1;position:relative;height:13px;border-radius:4px;overflow:hidden;"><div style="position:absolute;inset:0;background:rgba(255,255,255,.07);"></div><div style="position:absolute;top:0;bottom:0;left:0;width:51%;background:linear-gradient(90deg,#ff2d9b,#b32bff);"></div><div style="position:absolute;inset:0;background-image:repeating-linear-gradient(90deg,transparent 0 calc(10% - 3px),#0a0208 calc(10% - 3px) 10%);"></div></div><span style="width:30px;text-align:right;font-family:'Michroma',sans-serif;font-size:15px;color:#fff;flex:none;">51</span></div>
+                <div style="display:flex;align-items:center;gap:12px;"><span style="width:74px;font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.08em;color:rgba(255,255,255,.7);flex:none;">TRAIL GNAR</span><div style="flex:1;position:relative;height:13px;border-radius:4px;overflow:hidden;"><div style="position:absolute;inset:0;background:rgba(255,255,255,.07);"></div><div style="position:absolute;top:0;bottom:0;left:0;width:51%;background:linear-gradient(90deg,#ff2d9b,#b32bff);"></div><div style="position:absolute;inset:0;background-image:repeating-linear-gradient(90deg,transparent 0 calc(10% - 3px),#0a0208 calc(10% - 3px) 10%);"></div></div><span style="width:30px;text-align:right;font-family:'Michroma',sans-serif;font-size:15px;color:#fff;flex:none;">51</span></div>
+                <div style="display:flex;align-items:center;gap:12px;"><span style="width:74px;font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.08em;color:rgba(255,255,255,.7);flex:none;">AIR</span><div style="flex:1;position:relative;height:13px;border-radius:4px;overflow:hidden;"><div style="position:absolute;inset:0;background:rgba(255,255,255,.07);"></div><div style="position:absolute;top:0;bottom:0;left:0;width:31%;background:linear-gradient(90deg,#ff2d9b,#b32bff);"></div><div style="position:absolute;inset:0;background-image:repeating-linear-gradient(90deg,transparent 0 calc(10% - 3px),#0a0208 calc(10% - 3px) 10%);"></div></div><span style="width:30px;text-align:right;font-family:'Michroma',sans-serif;font-size:15px;color:#fff;flex:none;">31</span></div>
+                <div style="display:flex;align-items:center;gap:12px;"><span style="width:74px;font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.08em;color:rgba(255,255,255,.7);flex:none;">CORNERING</span><div style="flex:1;position:relative;height:13px;border-radius:4px;overflow:hidden;"><div style="position:absolute;inset:0;background:rgba(255,255,255,.07);"></div><div style="position:absolute;top:0;bottom:0;left:0;width:58%;background:linear-gradient(90deg,#ff2d9b,#b32bff);"></div><div style="position:absolute;inset:0;background-image:repeating-linear-gradient(90deg,transparent 0 calc(10% - 3px),#0a0208 calc(10% - 3px) 10%);"></div></div><span style="width:30px;text-align:right;font-family:'Michroma',sans-serif;font-size:15px;color:#fff;flex:none;">58</span></div>
+                <div style="display:flex;align-items:center;gap:12px;"><span style="width:74px;font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.08em;color:rgba(255,255,255,.7);flex:none;">FLOW</span><div style="flex:1;position:relative;height:13px;border-radius:4px;overflow:hidden;"><div style="position:absolute;inset:0;background:rgba(255,255,255,.07);"></div><div style="position:absolute;top:0;bottom:0;left:0;width:50%;background:linear-gradient(90deg,#ff2d9b,#b32bff);"></div><div style="position:absolute;inset:0;background-image:repeating-linear-gradient(90deg,transparent 0 calc(10% - 3px),#0a0208 calc(10% - 3px) 10%);"></div></div><span style="width:30px;text-align:right;font-family:'Michroma',sans-serif;font-size:15px;color:#fff;flex:none;">50</span></div>
+              </div>
+              <div style="border-radius:18px;padding:13px 15px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);">
+                <div style="font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.3em;color:rgba(255,255,255,.5);">FRIENDS</div>
+                <div style="display:flex;align-items:center;gap:10px;margin-top:9px;">
+                  <div style="display:flex;">
+                    <div style="width:26px;height:26px;border-radius:8px;background:linear-gradient(135deg,#12ffd4,#a020ff);border:1.5px solid #0a0208;"></div>
+                    <div style="width:26px;height:26px;border-radius:8px;background:linear-gradient(135deg,#ff2d9b,#a3ff12);border:1.5px solid #0a0208;margin-left:-8px;"></div>
+                  </div>
+                  <div style="font-family:'Michroma',sans-serif;font-size:12px;flex:1;">2 FRIENDS</div>
+                  <div style="color:rgba(255,255,255,.4);font-size:13px;">›</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- screen glare -->
+          <div style="position:absolute;inset:11px;border-radius:42px;background:linear-gradient(115deg,rgba(255,255,255,.10) 0%,transparent 30%);pointer-events:none;"></div>
+        </div>
+      </div>
+    </div>
+    <!-- marquee -->
+    <div style="border-top:1px solid rgba(255,255,255,.08);border-bottom:1px solid rgba(255,255,255,.08);overflow:hidden;padding:14px 0;background:rgba(255,255,255,.02);">
+      <div style="display:flex;gap:48px;white-space:nowrap;width:max-content;animation:marquee 28s linear infinite;font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.25em;color:rgba(255,255,255,.5);">
+        <span>SEND IT</span><span style="color:#ff2d9b;">✚</span><span>SCORE IT</span><span style="color:#a020ff;">✚</span><span>RUB IT IN</span><span style="color:#12ffd4;">✚</span><span>GOOD DOG</span><span style="color:#a3ff12;">✚</span><span>SEND IT</span><span style="color:#ff2d9b;">✚</span><span>SCORE IT</span><span style="color:#a020ff;">✚</span><span>RUB IT IN</span><span style="color:#12ffd4;">✚</span><span>GOOD DOG</span><span style="color:#a3ff12;">✚</span><span>SEND IT</span><span style="color:#ff2d9b;">✚</span><span>SCORE IT</span><span style="color:#a020ff;">✚</span><span>RUB IT IN</span><span style="color:#12ffd4;">✚</span><span>GOOD DOG</span><span style="color:#a3ff12;">✚</span><span>SEND IT</span><span style="color:#ff2d9b;">✚</span><span>SCORE IT</span><span style="color:#a020ff;">✚</span><span>RUB IT IN</span><span style="color:#12ffd4;">✚</span><span>GOOD DOG</span><span style="color:#a3ff12;">✚</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ ROAST CARDS ============ -->
+  <div id="roast" style="max-width:1200px;margin:0 auto;padding:90px 40px 100px;">
+    <div style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.3em;color:#ff2d9b;margin-bottom:14px;">YOUR CURRENT RIDING</div>
+    <h2 class="td-h2" style="font-family:'Michroma',sans-serif;font-size:34px;margin:0 0 44px;max-width:700px;line-height:1.2;">Let's be honest with each other for a second.</h2>
+    <div class="td-grid3" style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;">
+      <div style="border-radius:22px;padding:28px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);backdrop-filter:blur(20px);position:relative;overflow:hidden;">
+        <div style="position:absolute;inset:0;background:radial-gradient(100% 80% at 100% 0%,rgba(255,45,155,.18),transparent 60%);"></div>
+        <div style="position:relative;">
+          <div style="font-family:'Michroma',sans-serif;font-size:30px;text-shadow:3px 3px 0 rgba(255,45,155,.5);">0.2s</div>
+          <div style="font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.2em;color:rgba(255,255,255,.4);margin-top:6px;">YOUR "AIR TIME"</div>
+          <h3 style="font-family:'Chakra Petch',sans-serif;font-size:18px;font-weight:600;margin:18px 0 8px;">Getting as much air as a flightless bird?</h3>
+          <p style="font-size:13px;line-height:1.6;color:rgba(255,255,255,.55);margin:0;">Trail Dog's motion sensors clock every jump - height, hang time and how gracefully you case the landing. Air Time doesn't lie. Unlike you at the pub.</p>
+        </div>
+      </div>
+      <div style="border-radius:22px;padding:28px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);backdrop-filter:blur(20px);position:relative;overflow:hidden;">
+        <div style="position:absolute;inset:0;background:radial-gradient(100% 80% at 100% 0%,rgba(160,32,255,.18),transparent 60%);"></div>
+        <div style="position:relative;">
+          <div style="font-family:'Michroma',sans-serif;font-size:30px;text-shadow:3px 3px 0 rgba(160,32,255,.55);">41</div>
+          <div style="font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.2em;color:rgba(255,255,255,.4);margin-top:6px;">CORNERING /100 · OOF</div>
+          <h3 style="font-family:'Chakra Petch',sans-serif;font-size:18px;font-weight:600;margin:18px 0 8px;">Cornering berms like a tank?</h3>
+          <p style="font-size:13px;line-height:1.6;color:rgba(255,255,255,.55);margin:0;">We measure how much speed you carry through corners versus how much you nervously scrub off. Then we tell you. Repeatedly. Until you fix it.</p>
+        </div>
+      </div>
+      <div style="border-radius:22px;padding:28px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);backdrop-filter:blur(20px);position:relative;overflow:hidden;">
+        <div style="position:absolute;inset:0;background:radial-gradient(100% 80% at 100% 0%,rgba(18,255,212,.16),transparent 60%);"></div>
+        <div style="position:relative;">
+          <div style="font-family:'Michroma',sans-serif;font-size:30px;text-shadow:3px 3px 0 rgba(18,255,212,.5);">DNF</div>
+          <div style="font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.2em;color:rgba(255,255,255,.4);margin-top:6px;">THE CLIMB, PROBABLY</div>
+          <h3 style="font-family:'Chakra Petch',sans-serif;font-size:18px;font-weight:600;margin:18px 0 8px;">Pushing up the "easy" fire road?</h3>
+          <p style="font-size:13px;line-height:1.6;color:rgba(255,255,255,.55);margin:0;">Moving-vs-wheezing time tracked every ride. Trail Dog will have you shredding like Tom Pidcock in no time.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ ATTRIBUTES ============ -->
+  <div id="attributes" style="background:radial-gradient(120% 100% at 50% 0%,#2a0a26,#000 60%);border-top:1px solid rgba(255,255,255,.06);">
+    <div class="td-split" style="max-width:1200px;margin:0 auto;padding:90px 40px;display:grid;grid-template-columns:1fr 1.1fr;gap:60px;align-items:center;">
+      <div>
+        <div style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.3em;color:#a3ff12;margin-bottom:14px;">YOUR NEW RIDING</div>
+        <h2 class="td-h2" style="font-family:'Michroma',sans-serif;font-size:34px;margin:0 0 18px;line-height:1.2;">You don't need more travel or lighter carbon, you need to ride.</h2>
+        <p style="font-size:15px;line-height:1.7;color:rgba(255,255,255,.55);margin:0 0 22px;">Build your rider attributes ride by ride. The more you're out on the trail, the more the numbers move: corner faster, flow smoother, send bigger, and watch your riding stack up into progress you can actually see.</p>
+      </div>
+      <div style="border-radius:22px;padding:34px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);backdrop-filter:blur(20px);">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:26px;">
+          <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.3em;color:rgba(255,255,255,.55);">RIDER INDEX</span>
+          <span style="display:flex;align-items:baseline;gap:6px;"><span style="font-family:'Michroma',sans-serif;font-size:40px;text-shadow:3px 3px 0 rgba(163,255,18,.55);">53</span><span style="font-family:'Michroma',sans-serif;font-size:16px;color:rgba(255,255,255,.4);">/ 100</span></span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:15px;">
+<div style="display:flex;align-items:center;gap:14px;"><span style="width:92px;font-family:'Space Mono',monospace;font-size:11px;color:rgba(255,255,255,.75);">SPEED</span><div style="flex:1;position:relative;height:14px;border-radius:4px;overflow:hidden;"><div style="position:absolute;inset:0;background:rgba(255,255,255,.07);"></div><div style="position:absolute;top:0;bottom:0;left:0;width:51%;background:linear-gradient(90deg,#ff2d9b,#b32bff);"></div><div style="position:absolute;inset:0;background-image:repeating-linear-gradient(90deg,transparent 0 calc(10% - 3px),#000 calc(10% - 3px) 10%);"></div></div><span style="width:36px;text-align:right;font-family:'Michroma',sans-serif;font-size:15px;color:#fff;">51</span></div>
+          <div style="display:flex;align-items:center;gap:14px;"><span style="width:92px;font-family:'Space Mono',monospace;font-size:11px;color:rgba(255,255,255,.75);">TRAIL GNAR</span><div style="flex:1;position:relative;height:14px;border-radius:4px;overflow:hidden;"><div style="position:absolute;inset:0;background:rgba(255,255,255,.07);"></div><div style="position:absolute;top:0;bottom:0;left:0;width:51%;background:linear-gradient(90deg,#ff2d9b,#b32bff);"></div><div style="position:absolute;inset:0;background-image:repeating-linear-gradient(90deg,transparent 0 calc(10% - 3px),#000 calc(10% - 3px) 10%);"></div></div><span style="width:36px;text-align:right;font-family:'Michroma',sans-serif;font-size:15px;color:#fff;">51</span></div>
+          <div style="display:flex;align-items:center;gap:14px;"><span style="width:92px;font-family:'Space Mono',monospace;font-size:11px;color:rgba(255,255,255,.75);">AIR</span><div style="flex:1;position:relative;height:14px;border-radius:4px;overflow:hidden;"><div style="position:absolute;inset:0;background:rgba(255,255,255,.07);"></div><div style="position:absolute;top:0;bottom:0;left:0;width:31%;background:linear-gradient(90deg,#ff2d9b,#b32bff);"></div><div style="position:absolute;inset:0;background-image:repeating-linear-gradient(90deg,transparent 0 calc(10% - 3px),#000 calc(10% - 3px) 10%);"></div></div><span style="width:36px;text-align:right;font-family:'Michroma',sans-serif;font-size:15px;color:#fff;">31</span></div>
+          <div style="display:flex;align-items:center;gap:14px;"><span style="width:92px;font-family:'Space Mono',monospace;font-size:11px;color:rgba(255,255,255,.75);">CORNERING</span><div style="flex:1;position:relative;height:14px;border-radius:4px;overflow:hidden;"><div style="position:absolute;inset:0;background:rgba(255,255,255,.07);"></div><div style="position:absolute;top:0;bottom:0;left:0;width:58%;background:linear-gradient(90deg,#ff2d9b,#b32bff);"></div><div style="position:absolute;inset:0;background-image:repeating-linear-gradient(90deg,transparent 0 calc(10% - 3px),#000 calc(10% - 3px) 10%);"></div></div><span style="width:36px;text-align:right;font-family:'Michroma',sans-serif;font-size:15px;color:#fff;">58</span></div>
+          <div style="display:flex;align-items:center;gap:14px;"><span style="width:92px;font-family:'Space Mono',monospace;font-size:11px;color:rgba(255,255,255,.75);">FLOW</span><div style="flex:1;position:relative;height:14px;border-radius:4px;overflow:hidden;"><div style="position:absolute;inset:0;background:rgba(255,255,255,.07);"></div><div style="position:absolute;top:0;bottom:0;left:0;width:50%;background:linear-gradient(90deg,#ff2d9b,#b32bff);"></div><div style="position:absolute;inset:0;background-image:repeating-linear-gradient(90deg,transparent 0 calc(10% - 3px),#000 calc(10% - 3px) 10%);"></div></div><span style="width:36px;text-align:right;font-family:'Michroma',sans-serif;font-size:15px;color:#fff;">50</span></div>
+        </div>
+        <div style="margin-top:24px;font-family:'Space Mono',monospace;font-size:11px;line-height:1.6;color:rgba(255,255,255,.5);border-left:2px solid #12ffd4;padding-left:12px;">Air: 31. Flap those feathers little birdie.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ APP SCREENS ============ -->
+  <div id="app" style="max-width:1200px;margin:0 auto;padding:90px 40px;">
+    <div style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.3em;color:#12ffd4;margin-bottom:14px;">THE APP</div>
+    <h2 class="td-h2" style="font-family:'Michroma',sans-serif;font-size:34px;margin:0 0 12px;line-height:1.2;">Your new coach has a cold nose<br>and zero sympathy.</h2>
+    <p style="font-size:15px;color:rgba(255,255,255,.55);margin:0 0 54px;max-width:560px;line-height:1.6;">Tap START, shove your phone in your pocket, ride like you're being chased. Trail Dog does the maths; you take the credit.</p>
+    <div class="td-grid3" style="display:grid;grid-template-columns:repeat(3,1fr);gap:36px;align-items:start;">
+      <div>
+        <div style="border-radius:44px;background:linear-gradient(145deg,#2e2e38,#15151c);padding:9px;box-shadow:0 0 0 1px rgba(255,255,255,.14),0 30px 60px rgba(0,0,0,.7),0 0 70px rgba(160,32,255,.22);">
+          <img src="assets/d0c4ef7a-3dfc-4d42-8737-43096f94ad26.png" alt="Ready screen with glowing START button" style="width:100%;height:auto;border-radius:36px;display:block;">
+        </div>
+        <div style="margin-top:20px;padding:0 6px;">
+          <div style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.25em;color:#ff2d9b;">01 · PRESS THE BIG BUTTON</div>
+          <p style="font-size:13px;line-height:1.6;color:rgba(255,255,255,.55);margin:8px 0 0;">Even you can manage this bit.</p>
+        </div>
+      </div>
+      <div>
+        <div style="border-radius:44px;background:linear-gradient(145deg,#2e2e38,#15151c);padding:9px;box-shadow:0 0 0 1px rgba(255,255,255,.14),0 30px 60px rgba(0,0,0,.7),0 0 70px rgba(163,255,18,.16);">
+          <img src="assets/9fb0b6d5-890c-441d-8786-f6f333ced301.png" alt="Live recording over satellite map" style="width:100%;height:auto;border-radius:36px;display:block;">
+        </div>
+        <div style="margin-top:20px;padding:0 6px;">
+          <div style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.25em;color:#a3ff12;"><span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:#a3ff12;margin-right:6px;animation:recpulse 1.4s infinite;"></span>02 · GO FETCH</div>
+          <p style="font-size:13px;line-height:1.6;color:rgba(255,255,255,.55);margin:8px 0 0;">GPS, accelerometer, gyro and barometer record every line, jump, rock garden and questionable decision.</p>
+        </div>
+      </div>
+      <div>
+        <div style="border-radius:44px;background:linear-gradient(145deg,#2e2e38,#15151c);padding:9px;box-shadow:0 0 0 1px rgba(255,255,255,.14),0 30px 60px rgba(0,0,0,.7),0 0 70px rgba(18,255,212,.18);">
+          <div style="border-radius:36px;overflow:hidden;background:#000;aspect-ratio:630/1368;display:flex;flex-direction:column;position:relative;">
+            <div style="height:37%;position:relative;background:radial-gradient(120% 100% at 60% 20%,#233022,#131a12 55%,#0c110c);flex:none;">
+              <div style="position:absolute;inset:0;background-image:repeating-linear-gradient(55deg,transparent 0 12px,rgba(0,0,0,.18) 12px 22px),repeating-linear-gradient(-30deg,transparent 0 18px,rgba(255,255,255,.03) 18px 19px);"></div>
+              <svg sc-camel-view-box="0 0 300 220" sc-camel-preserve-aspect-ratio="none" style="position:absolute;inset:0;width:100%;height:100%;"><path d="M262,30 C258,60 244,72 240,96 C236,118 200,128 170,142 C138,156 96,158 78,170 C64,179 56,186 48,182 C40,178 52,168 46,162" fill="none" stroke="#2ef2c4" stroke-width="3" stroke-linecap="round" style="filter:drop-shadow(0 0 4px rgba(46,242,196,.7));"></path><circle cx="262" cy="28" r="6" fill="#a3ff12" stroke="#0c110c" stroke-width="2"></circle></svg>
+              <span style="position:absolute;top:30%;left:26%;display:inline-flex;align-items:center;gap:4px;font-family:'Space Mono',monospace;font-size:7.5px;color:#fff;background:rgba(0,0,0,.55);padding:3px 8px;border-radius:9px;backdrop-filter:blur(6px);white-space:nowrap;"><span style="width:6px;height:6px;border-radius:50%;background:#ff2d9b;display:inline-block;"></span>A470 Line</span>
+              <span style="position:absolute;top:40%;left:12%;display:inline-flex;align-items:center;gap:4px;font-family:'Space Mono',monospace;font-size:7.5px;color:#fff;background:rgba(0,0,0,.55);padding:3px 8px;border-radius:9px;backdrop-filter:blur(6px);white-space:nowrap;">Terry's Belly (Red)</span>
+              <span style="position:absolute;top:56%;left:10%;display:inline-flex;align-items:center;gap:4px;font-family:'Space Mono',monospace;font-size:7.5px;color:#fff;background:rgba(0,0,0,.55);padding:3px 8px;border-radius:9px;backdrop-filter:blur(6px);white-space:nowrap;"><span style="width:6px;height:6px;border-radius:50%;background:#ff4b4b;display:inline-block;"></span>Dai Hard (Black)</span>
+              <span style="position:absolute;top:74%;left:16%;display:inline-flex;align-items:center;gap:4px;font-family:'Space Mono',monospace;font-size:7.5px;color:#fff;background:rgba(0,0,0,.55);padding:3px 8px;border-radius:9px;backdrop-filter:blur(6px);white-space:nowrap;">Enter the Dragon (Blue)</span>
+              <div style="position:absolute;top:22px;left:12px;width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,.12);backdrop-filter:blur(8px);display:flex;align-items:center;justify-content:center;font-size:11px;color:#fff;">‹</div>
+              <div style="position:absolute;top:22px;right:12px;width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,.12);backdrop-filter:blur(8px);display:flex;align-items:center;justify-content:center;font-size:11px;color:#fff;letter-spacing:1px;">···</div>
+            </div>
+            <div style="flex:1;min-height:0;padding:12px 14px 14px;display:flex;flex-direction:column;gap:10px;overflow:hidden;">
+              <div>
+                <div style="font-family:'Michroma',sans-serif;font-size:17px;">Bike Park Wales</div>
+                <div style="font-family:'Space Mono',monospace;font-size:8px;letter-spacing:.2em;color:rgba(255,255,255,.45);margin-top:4px;">SATURDAY 18 JULY</div>
+                <span style="display:inline-flex;margin-top:8px;font-family:'Space Mono',monospace;font-size:8px;color:rgba(255,255,255,.65);background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);padding:3px 9px;border-radius:100px;">⛅ 12° · Sunny spells · 14 km/h</span>
+              </div>
+              <div style="border-radius:16px;padding:16px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);text-align:center;">
+                <div style="display:flex;align-items:baseline;justify-content:center;gap:6px;"><span style="font-family:'Michroma',sans-serif;font-size:34px;line-height:1;text-shadow:2.5px 2.5px 0 rgba(18,255,212,.55);">5.6</span><span style="font-family:'Michroma',sans-serif;font-size:13px;color:rgba(255,255,255,.4);">/ 10</span></div>
+                <div style="font-family:'Space Mono',monospace;font-size:8px;letter-spacing:.25em;color:rgba(255,255,255,.5);margin-top:8px;">RIDE SCORE</div>
+              </div>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+                <div style="border-radius:14px;padding:12px 13px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);"><div style="display:flex;align-items:center;gap:7px;"><span style="color:#12ffd4;font-size:11px;">🗺</span><span style="font-family:'Michroma',sans-serif;font-size:19px;line-height:1;text-shadow:2px 2px 0 rgba(18,255,212,.5);">13.3</span></div><div style="font-family:'Space Mono',monospace;font-size:7.5px;letter-spacing:.15em;color:rgba(255,255,255,.45);margin-top:7px;">DISTANCE KM</div></div>
+                <div style="border-radius:14px;padding:12px 13px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);"><div style="display:flex;align-items:center;gap:7px;"><span style="color:#12ffd4;font-size:11px;">◷</span><span style="font-family:'Michroma',sans-serif;font-size:19px;line-height:1;text-shadow:2px 2px 0 rgba(18,255,212,.5);">1:26:18</span></div><div style="font-family:'Space Mono',monospace;font-size:7.5px;letter-spacing:.15em;color:rgba(255,255,255,.45);margin-top:7px;">TIME</div></div>
+                <div style="border-radius:14px;padding:12px 13px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);"><div style="display:flex;align-items:center;gap:7px;"><span style="color:#12ffd4;font-size:11px;">↗</span><span style="font-family:'Michroma',sans-serif;font-size:19px;line-height:1;text-shadow:2px 2px 0 rgba(18,255,212,.5);">333</span></div><div style="font-family:'Space Mono',monospace;font-size:7.5px;letter-spacing:.15em;color:rgba(255,255,255,.45);margin-top:7px;">ELEVATION GAIN M</div></div>
+                <div style="border-radius:14px;padding:12px 13px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);"><div style="display:flex;align-items:center;gap:7px;"><span style="color:#12ffd4;font-size:11px;">≋</span><span style="font-family:'Michroma',sans-serif;font-size:19px;line-height:1;text-shadow:2px 2px 0 rgba(18,255,212,.5);">7.8</span></div><div style="font-family:'Space Mono',monospace;font-size:7.5px;letter-spacing:.15em;color:rgba(255,255,255,.45);margin-top:7px;">AIR TIME S</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top:20px;padding:0 6px;">
+          <div style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.25em;color:#12ffd4;">03 · READ THE DAMAGE</div>
+          <p style="font-size:13px;line-height:1.6;color:rgba(255,255,255,.55);margin:8px 0 0;">Find out your ride score - how fast, how steep, how gnarly.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ HEAD TO HEAD ============ -->
+  <div id="versus" style="background:radial-gradient(120% 100% at 50% 100%,#101c1a,#000 60%);border-top:1px solid rgba(255,255,255,.06);">
+    <div class="td-split" style="max-width:1200px;margin:0 auto;padding:90px 40px;display:grid;grid-template-columns:1fr 1.1fr;gap:60px;align-items:center;">
+      <div style="display:flex;justify-content:center;perspective:1400px;padding:30px 0;">
+        <div style="border-radius:44px;background:linear-gradient(215deg,#26262e,#0c0c10 40%,#1c1c24);padding:9px;box-shadow:40px 60px 90px rgba(0,0,0,.75),0 0 0 2px #17171c,2px 0 0 3px #2e2e38,0 0 70px rgba(255,45,155,.18);width:340px;transform:rotateY(22deg) rotateX(6deg) rotateZ(-3deg);transform-style:preserve-3d;">
+          <div style="border-radius:36px;overflow:hidden;background:#000;display:flex;flex-direction:column;position:relative;padding:16px 16px 22px;background-image:linear-gradient(245deg,rgba(255,255,255,.08) 0%,transparent 30%);">
+            <div style="display:flex;justify-content:space-between;align-items:center;font-family:'Space Mono',monospace;font-size:11px;font-weight:700;padding:2px 8px 12px;"><span></span><span></span></div>
+            <div style="display:flex;align-items:center;gap:10px;padding:0 4px 14px;">
+              <div style="width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;font-size:12px;">‹</div>
+              <div style="flex:1;text-align:center;font-family:'Chakra Petch',sans-serif;font-size:15px;font-weight:600;margin-right:28px;">Head to head</div>
+            </div>
+            <div style="display:flex;align-items:center;justify-content:center;gap:26px;padding-bottom:16px;">
+              <div style="text-align:center;">
+                <div style="width:54px;height:54px;border-radius:16px;background:linear-gradient(135deg,#3a5a2a,#8aa86a);border:2px solid transparent;background-image:linear-gradient(135deg,#3a5a2a,#8aa86a),linear-gradient(135deg,#ff2d9b,#a020ff,#12ffd4,#a3ff12);background-origin:padding-box,border-box;background-clip:padding-box,border-box;margin:0 auto;"></div>
+                <div style="font-family:'Space Mono',monospace;font-size:9px;font-weight:700;color:#ff2d9b;margin-top:5px;letter-spacing:.1em;">DOGGY420</div>
+              </div>
+              <div style="font-family:'Space Mono',monospace;font-size:13px;letter-spacing:.2em;color:rgba(255,255,255,.35);">VS</div>
+              <div style="text-align:center;">
+                <div style="width:54px;height:54px;border-radius:16px;background:linear-gradient(135deg,#1a5a8a,#7ab8d9);border:1px solid rgba(255,255,255,.2);margin:0 auto;"></div>
+                <div style="font-family:'Space Mono',monospace;font-size:9px;font-weight:700;color:#12ffd4;margin-top:5px;letter-spacing:.1em;">DOGWALKER69</div>
+              </div>
+            </div>
+            <div style="border-radius:18px;padding:14px 18px 16px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);text-align:center;margin-bottom:12px;">
+              <div style="font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.3em;color:rgba(255,255,255,.5);">RIDER INDEX</div>
+              <div style="display:flex;justify-content:space-around;align-items:baseline;margin-top:8px;">
+                <span style="font-family:'Michroma',sans-serif;font-size:38px;line-height:1;color:#fff;text-shadow:3px 3px 0 rgba(255,45,155,.55);">53</span>
+                <span style="font-family:'Michroma',sans-serif;font-size:38px;line-height:1;color:#fff;text-shadow:3px 3px 0 rgba(18,255,212,.55);">41</span>
+              </div>
+            </div>
+            <div style="border-radius:18px;padding:16px 16px 14px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);display:flex;flex-direction:column;gap:13px;">
+              <div>
+                <div style="text-align:center;font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.3em;color:rgba(255,255,255,.5);margin-bottom:8px;">SPEED</div>
+                <div style="display:flex;gap:4px;align-items:center;"><div style="flex:1;height:11px;border-radius:3px;background:rgba(255,255,255,.09);"></div><div style="flex:1;height:11px;border-radius:3px;background:rgba(255,255,255,.09);"></div><div style="flex:1;height:11px;border-radius:3px;background:linear-gradient(90deg,#a020ff,#ff2d9b);"></div><div style="flex:1;height:11px;border-radius:3px;background:linear-gradient(90deg,#a020ff,#ff2d9b);"></div><div style="flex:1;height:11px;border-radius:3px;background:linear-gradient(90deg,#a020ff,#ff2d9b);"></div><div style="flex:1;height:11px;border-radius:3px;background:linear-gradient(90deg,#12ffd4,#5cff8a);"></div><div style="flex:1;height:11px;border-radius:3px;background:linear-gradient(90deg,#12ffd4,#5cff8a);"></div><div style="flex:1;height:11px;border-radius:3px;background:rgba(255,255,255,.09);"></div><div style="flex:1;height:11px;border-radius:3px;background:rgba(255,255,255,.09);"></div><div style="flex:1;height:11px;border-radius:3px;background:rgba(255,255,255,.09);"></div></div>
+                <div style="display:flex;justify-content:space-between;margin-top:6px;"><span style="font-family:'Space Mono',monospace;font-size:14px;color:#ff2d9b;text-shadow:0 0 8px rgba(255,45,155,.6);">51</span><span style="font-family:'Space Mono',monospace;font-size:14px;color:#e8fff4;">42</span></div>
+              </div>
+              <div>
+                <div style="text-align:center;font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.3em;color:rgba(255,255,255,.5);margin-bottom:8px;">TRAIL GNAR</div>
+                <div style="display:flex;gap:4px;align-items:center;"><div style="flex:1;height:11px;border-radius:3px;background:rgba(255,255,255,.09);"></div><div style="flex:1;height:11px;border-radius:3px;background:rgba(255,255,255,.09);"></div><div style="flex:1;height:11px;border-radius:3px;background:linear-gradient(90deg,#a020ff,#ff2d9b);"></div><div style="flex:1;height:11px;border-radius:3px;background:linear-gradient(90deg,#a020ff,#ff2d9b);"></div><div style="flex:1;height:11px;border-radius:3px;background:linear-gradient(90deg,#a020ff,#ff2d9b);"></div><div style="flex:1;height:11px;border-radius:3px;background:linear-gradient(90deg,#12ffd4,#5cff8a);"></div><div style="flex:1;height:11px;border-radius:3px;background:linear-gradient(90deg,#12ffd4,#5cff8a);"></div><div style="flex:1;height:11px;border-radius:3px;background:linear-gradient(90deg,#12ffd4,#5cff8a);"></div><div style="flex:1;height:11px;border-radius:3px;background:rgba(255,255,255,.09);"></div><div style="flex:1;height:11px;border-radius:3px;background:rgba(255,255,255,.09);"></div></div>
+                <div style="display:flex;justify-content:space-between;margin-top:6px;"><span style="font-family:'Space Mono',monospace;font-size:14px;color:#ff2d9b;text-shadow:0 0 8px rgba(255,45,155,.6);">51</span><span style="font-family:'Space Mono',monospace;font-size:14px;color:#e8fff4;">50</span></div>
+              </div>
+              <div>
+                <div style="text-align:center;font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.3em;color:rgba(255,255,255,.5);margin-bottom:8px;">AIR</div>
+                <div style="display:flex;gap:4px;align-items:center;"><div style="flex:1;height:11px;border-radius:3px;background:rgba(255,255,255,.09);"></div><div style="flex:1;height:11px;border-radius:3px;background:rgba(255,255,255,.09);"></div><div style="flex:1;height:11px;border-radius:3px;background:rgba(255,255,255,.09);"></div><div style="flex:1;height:11px;border-radius:3px;background:linear-gradient(90deg,#a020ff,#ff2d9b);"></div><div style="flex:1;height:11px;border-radius:3px;background:linear-gradient(90deg,#a020ff,#ff2d9b);"></div><div style="flex:1;height:11px;border-radius:3px;background:linear-gradient(90deg,#12ffd4,#5cff8a);"></div><div style="flex:1;height:11px;border-radius:3px;background:linear-gradient(90deg,#12ffd4,#5cff8a);"></div><div style="flex:1;height:11px;border-radius:3px;background:rgba(255,255,255,.09);"></div><div style="flex:1;height:11px;border-radius:3px;background:rgba(255,255,255,.09);"></div><div style="flex:1;height:11px;border-radius:3px;background:rgba(255,255,255,.09);"></div></div>
+                <div style="display:flex;justify-content:space-between;margin-top:6px;"><span style="font-family:'Space Mono',monospace;font-size:14px;color:#ff2d9b;text-shadow:0 0 8px rgba(255,45,155,.6);">31</span><span style="font-family:'Space Mono',monospace;font-size:14px;color:#e8fff4;">31</span></div>
+              </div>
+              <div>
+                <div style="text-align:center;font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.3em;color:rgba(255,255,255,.5);margin-bottom:8px;">CORNERING</div>
+                <div style="display:flex;gap:4px;align-items:center;"><div style="flex:1;height:11px;border-radius:3px;background:rgba(255,255,255,.09);"></div><div style="flex:1;height:11px;border-radius:3px;background:rgba(255,255,255,.09);"></div><div style="flex:1;height:11px;border-radius:3px;background:linear-gradient(90deg,#a020ff,#ff2d9b);"></div><div style="flex:1;height:11px;border-radius:3px;background:linear-gradient(90deg,#a020ff,#ff2d9b);"></div><div style="flex:1;height:11px;border-radius:3px;background:linear-gradient(90deg,#a020ff,#ff2d9b);"></div><div style="flex:1;height:11px;border-radius:3px;background:linear-gradient(90deg,#12ffd4,#5cff8a);"></div><div style="flex:1;height:11px;border-radius:3px;background:linear-gradient(90deg,#12ffd4,#5cff8a);"></div><div style="flex:1;height:11px;border-radius:3px;background:rgba(255,255,255,.09);"></div><div style="flex:1;height:11px;border-radius:3px;background:rgba(255,255,255,.09);"></div><div style="flex:1;height:11px;border-radius:3px;background:rgba(255,255,255,.09);"></div></div>
+                <div style="display:flex;justify-content:space-between;margin-top:6px;"><span style="font-family:'Space Mono',monospace;font-size:14px;color:#ff2d9b;text-shadow:0 0 8px rgba(255,45,155,.6);">58</span><span style="font-family:'Space Mono',monospace;font-size:14px;color:#e8fff4;">40</span></div>
+              </div>
+              <div>
+                <div style="text-align:center;font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.3em;color:rgba(255,255,255,.5);margin-bottom:8px;">FLOW</div>
+                <div style="display:flex;gap:4px;align-items:center;"><div style="flex:1;height:11px;border-radius:3px;background:rgba(255,255,255,.09);"></div><div style="flex:1;height:11px;border-radius:3px;background:rgba(255,255,255,.09);"></div><div style="flex:1;height:11px;border-radius:3px;background:linear-gradient(90deg,#a020ff,#ff2d9b);"></div><div style="flex:1;height:11px;border-radius:3px;background:linear-gradient(90deg,#a020ff,#ff2d9b);"></div><div style="flex:1;height:11px;border-radius:3px;background:linear-gradient(90deg,#a020ff,#ff2d9b);"></div><div style="flex:1;height:11px;border-radius:3px;background:linear-gradient(90deg,#12ffd4,#5cff8a);"></div><div style="flex:1;height:11px;border-radius:3px;background:linear-gradient(90deg,#12ffd4,#5cff8a);"></div><div style="flex:1;height:11px;border-radius:3px;background:rgba(255,255,255,.09);"></div><div style="flex:1;height:11px;border-radius:3px;background:rgba(255,255,255,.09);"></div><div style="flex:1;height:11px;border-radius:3px;background:rgba(255,255,255,.09);"></div></div>
+                <div style="display:flex;justify-content:space-between;margin-top:6px;"><span style="font-family:'Space Mono',monospace;font-size:14px;color:#ff2d9b;text-shadow:0 0 8px rgba(255,45,155,.6);">50</span><span style="font-family:'Space Mono',monospace;font-size:14px;color:#e8fff4;">32</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.3em;color:#ff2d9b;margin-bottom:14px;">PUT THE ARGUMENTS TO BED</div>
+        <h2 class="td-h2" style="font-family:'Michroma',sans-serif;font-size:34px;margin:0 0 18px;line-height:1.2;">Go head to head with your buds</h2>
+        <p style="font-size:15px;line-height:1.7;color:rgba(255,255,255,.55);margin:0 0 22px;">Line your attributes up against your mates', side by side, attribute by attribute. Who actually corners faster. Who really gets more air. Who's all talk on the climbs.</p>
+        <p style="font-size:15px;line-height:1.7;color:rgba(255,255,255,.55);margin:0;">The numbers settle it — <span style="color:#12ffd4;">no more "I was right behind you"</span>. You were not, DogWalker69.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ FINAL CTA ============ -->
+  <div style="position:relative;overflow:hidden;border-top:1px solid rgba(255,255,255,.06);">
+    <div style="position:absolute;inset:0;background:radial-gradient(70% 90% at 50% 100%,rgba(255,45,155,.22),transparent 70%);"></div>
+    <div style="position:relative;max-width:1200px;margin:0 auto;padding:110px 40px 90px;text-align:center;">
+      <div style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.3em;color:#ff2d9b;margin-bottom:18px;">LAST CHANCE TO KEEP MAKING EXCUSES</div>
+      <h2 class="td-cta-h" style="font-family:'Michroma',sans-serif;font-size:44px;margin:0 auto 20px;max-width:760px;line-height:1.15;text-shadow:4px 4px 0 rgba(163,255,18,.5);">STOP BEING THE ONE THEY WAIT FOR.</h2>
+      <a href="https://testflight.apple.com/join/JmuvS9DU" style="text-decoration:none;color:inherit;display:inline-block"><div style="display:inline-block;padding:18px 46px;border-radius:100px;background:linear-gradient(135deg,#ff2d9b,#a020ff);color:#000;font-weight:700;font-size:16px;letter-spacing:.08em;box-shadow:inset 0 2px 6px rgba(255,255,255,.4),0 0 50px rgba(255,45,155,.4);cursor:pointer;">GET TRAIL DOG FREE</div></a>
+      
+    </div>
+  </div>
+
+  <!-- ============ FOOTER ============ -->
+  <div class="td-footer" style="border-top:1px solid rgba(255,255,255,.08);padding:30px 40px;display:flex;justify-content:space-between;align-items:center;max-width:1200px;margin:0 auto;">
+    <div style="display:flex;align-items:center;gap:10px;">
+      <img src="assets/ffce3ace-3cae-4ec6-afda-9d4d9176649e.png" alt="" style="width:28px;height:28px;border-radius:8px;object-fit:cover;object-position:50% 18%;">
+      <span style="font-family:'Michroma',sans-serif;font-size:11px;letter-spacing:.1em;">TRAIL DOG</span>
+    </div>
+    <div style="font-family:'Space Mono',monospace;font-size:10px;color:rgba(255,255,255,.35);">© 2026 Trail Dog. No egos were spared in the making of this app.</div>
+    <div style="display:flex;gap:20px;font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.1em;">
+      <a href="privacy.html" style="color:rgba(255,255,255,.45);">PRIVACY</a>
+      <a href="support.html" style="color:rgba(255,255,255,.45);">SUPPORT</a>
+    </div>
+  </div>
+
+</div>
+</x-dc>
+
+
 </body></html>
