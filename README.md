@@ -1,3 +1,3 @@
 # traildog-site
 
-Trail Dog's one-page website, served by GitHub Pages.
+Traildog's one-page website, served by GitHub Pages.
