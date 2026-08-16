@@ -272,8 +272,14 @@
   @keyframes glowpulse { 0%,100%{ opacity:.5;} 50%{ opacity:.9;} }
   @keyframes recpulse { 0%,100%{ opacity:1;} 50%{ opacity:.3;} }
   @keyframes marquee { 0%{ transform:translateX(0);} 100%{ transform:translateX(-50%);} }
+  /* step headings under each app screen */
+  .td-step-h { font-family:'Michroma',sans-serif; font-size:17px; line-height:1.35; letter-spacing:.02em; display:flex; align-items:center; flex-wrap:wrap; }
   @media (max-width: 980px) {
     .td-hero, .td-split, .td-grid3 { grid-template-columns: 1fr !important; }
+    /* stop the phone screenshots filling the whole screen once stacked */
+    .td-step { max-width: 340px; margin-left: auto; margin-right: auto; }
+    .td-phone { max-width: 250px; margin-left: auto; margin-right: auto; }
+    .td-step-h { font-size: 16px; }
     .td-h2h-copy { order: -1; }
     .td-hero { padding: 60px 24px 40px !important; }
     .td-split { padding: 60px 24px !important; gap: 40px !important; }
@@ -287,6 +293,8 @@
     .td-h1 { font-size: 27px !important; }
     .td-h2 { font-size: 20px !important; }
     .td-cta-h { font-size: 22px !important; }
+    /* nav has no room for both at phone width; the footer link still covers it */
+    .td-nav-contact { display: none; }
     .td-hero, .td-split { padding-left: 18px !important; padding-right: 18px !important; }
   }
 </style>
@@ -300,7 +308,8 @@
       <img src="assets/ffce3ace-3cae-4ec6-afda-9d4d9176649e.png" alt="TrailDog" style="width:40px;height:40px;border-radius:12px;object-fit:cover;object-position:50% 18%;border:2px solid transparent;background:linear-gradient(#000,#000) padding-box,linear-gradient(135deg,#ff2d9b,#a020ff,#12ffd4,#a3ff12) border-box;">
       <div style="font-family:'Michroma',sans-serif;font-size:16px;letter-spacing:.06em;text-shadow:0.125em 0.125em 0 rgba(163,255,18,.55);">TRAILDOG</div>
     </div>
-    <div style="display:flex;align-items:center;">
+    <div style="display:flex;align-items:center;gap:22px;">
+      <a href="contact.html" class="td-nav-contact" style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.15em;color:rgba(255,255,255,.55);white-space:nowrap;">CONTACT US</a>
       <a href="https://apps.apple.com/app/id6789243952" style="text-decoration:none;color:inherit;display:inline-block"><div style="padding:10px 22px;border-radius:100px;background:linear-gradient(135deg,#ff2d9b,#a020ff);color:#000;font-weight:700;font-family:'Chakra Petch',sans-serif;font-size:13px;letter-spacing:.08em;box-shadow:inset 0 1px 4px rgba(255,255,255,.4);cursor:pointer;">GET THE APP</div></a>
     </div>
   </div>
@@ -435,26 +444,26 @@
     <h2 class="td-h2" style="font-family:'Michroma',sans-serif;font-size:34px;margin:0 0 12px;line-height:1.2;">Your new coach has a cold nose<br>and zero sympathy.</h2>
     <p style="font-size:15px;color:rgba(255,255,255,.55);margin:0 0 54px;max-width:560px;line-height:1.6;">Tap START, shove your phone in your pocket, ride like you're being chased. TrailDog does the tracking, you take the credit.</p>
     <div class="td-grid3" style="display:grid;grid-template-columns:repeat(3,1fr);gap:36px;align-items:start;">
-      <div>
-        <div style="border-radius:44px;background:linear-gradient(145deg,#2e2e38,#15151c);padding:9px;box-shadow:0 0 0 1px rgba(255,255,255,.14),0 30px 60px rgba(0,0,0,.7),0 0 70px rgba(160,32,255,.22);">
+      <div class="td-step">
+        <div class="td-phone" style="border-radius:44px;background:linear-gradient(145deg,#2e2e38,#15151c);padding:9px;box-shadow:0 0 0 1px rgba(255,255,255,.14),0 30px 60px rgba(0,0,0,.7),0 0 70px rgba(160,32,255,.22);">
           <img src="assets/d0c4ef7a-3dfc-4d42-8737-43096f94ad26.png" alt="Ready screen with glowing START button" style="width:100%;height:auto;border-radius:36px;display:block;">
         </div>
         <div style="margin-top:20px;padding:0 6px;">
-          <div style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.25em;color:#ff2d9b;">01 · PRESS THE BIG BUTTON</div>
+          <div class="td-step-h" style="color:#ff2d9b;">01 · PRESS THE BIG BUTTON</div>
           <p style="font-size:13px;line-height:1.6;color:rgba(255,255,255,.55);margin:8px 0 0;">Even you can manage this bit.</p>
         </div>
       </div>
-      <div>
-        <div style="border-radius:44px;background:linear-gradient(145deg,#2e2e38,#15151c);padding:9px;box-shadow:0 0 0 1px rgba(255,255,255,.14),0 30px 60px rgba(0,0,0,.7),0 0 70px rgba(163,255,18,.16);">
+      <div class="td-step">
+        <div class="td-phone" style="border-radius:44px;background:linear-gradient(145deg,#2e2e38,#15151c);padding:9px;box-shadow:0 0 0 1px rgba(255,255,255,.14),0 30px 60px rgba(0,0,0,.7),0 0 70px rgba(163,255,18,.16);">
           <img src="assets/9fb0b6d5-890c-441d-8786-f6f333ced301.png" alt="Live recording over satellite map" style="width:100%;height:auto;border-radius:36px;display:block;">
         </div>
         <div style="margin-top:20px;padding:0 6px;">
-          <div style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.25em;color:#a3ff12;"><span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:#a3ff12;margin-right:6px;animation:recpulse 1.4s infinite;"></span>02 · GO FETCH</div>
+          <div class="td-step-h" style="color:#a3ff12;"><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#a3ff12;margin-right:8px;animation:recpulse 1.4s infinite;"></span>02 · GO FETCH</div>
           <p style="font-size:13px;line-height:1.6;color:rgba(255,255,255,.55);margin:8px 0 0;">GPS, accelerometer, gyro and barometer record every line, jump, rock garden and questionable decision.</p>
         </div>
       </div>
-      <div>
-        <div style="border-radius:44px;background:linear-gradient(145deg,#2e2e38,#15151c);padding:9px;box-shadow:0 0 0 1px rgba(255,255,255,.14),0 30px 60px rgba(0,0,0,.7),0 0 70px rgba(18,255,212,.18);">
+      <div class="td-step">
+        <div class="td-phone" style="border-radius:44px;background:linear-gradient(145deg,#2e2e38,#15151c);padding:9px;box-shadow:0 0 0 1px rgba(255,255,255,.14),0 30px 60px rgba(0,0,0,.7),0 0 70px rgba(18,255,212,.18);">
           <div style="border-radius:36px;overflow:hidden;background:#000;aspect-ratio:630/1368;display:flex;flex-direction:column;position:relative;">
             <div style="height:37%;position:relative;background:radial-gradient(120% 100% at 60% 20%,#233022,#131a12 55%,#0c110c);flex:none;">
               <div style="position:absolute;inset:0;background-image:repeating-linear-gradient(55deg,transparent 0 12px,rgba(0,0,0,.18) 12px 22px),repeating-linear-gradient(-30deg,transparent 0 18px,rgba(255,255,255,.03) 18px 19px);"></div>
@@ -486,7 +495,7 @@
           </div>
         </div>
         <div style="margin-top:20px;padding:0 6px;">
-          <div style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.25em;color:#12ffd4;">03 · READ THE DAMAGE</div>
+          <div class="td-step-h" style="color:#12ffd4;">03 · READ THE DAMAGE</div>
           <p style="font-size:13px;line-height:1.6;color:rgba(255,255,255,.55);margin:8px 0 0;">Find out your ride score - how fast, how steep, how gnarly.</p>
         </div>
       </div>
@@ -582,6 +591,7 @@
     <div style="display:flex;gap:20px;font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.1em;">
       <a href="privacy.html" style="color:rgba(255,255,255,.45);">PRIVACY</a>
       <a href="support.html" style="color:rgba(255,255,255,.45);">SUPPORT</a>
+      <a href="contact.html" style="color:rgba(255,255,255,.45);">CONTACT</a>
     </div>
   </div>
 

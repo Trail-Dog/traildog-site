@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<title>TrailDog — Contact</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Get in touch with the TrailDog team. Bugs, feedback, a stat that looks wrong, or just to say hello.">
+<style>
+  /* latin subsets of the three brand faces, served from assets/ like index.html */
+  @font-face { font-family:'Chakra Petch'; font-style:normal; font-weight:400; font-display:swap;
+    src:url("assets/04fc2aef-f6cc-4f38-9911-4d87eac37462.woff2") format('woff2');
+    unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+  @font-face { font-family:'Chakra Petch'; font-style:normal; font-weight:600; font-display:swap;
+    src:url("assets/62291c09-af3a-4d2e-a779-be8367854a3a.woff2") format('woff2');
+    unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+  @font-face { font-family:'Chakra Petch'; font-style:normal; font-weight:700; font-display:swap;
+    src:url("assets/d70eafb4-ad0d-43e0-b1ec-1d1c20db375e.woff2") format('woff2');
+    unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+  @font-face { font-family:'Michroma'; font-style:normal; font-weight:400; font-display:swap;
+    src:url("assets/d2f7d4bb-c8a4-4064-a98e-61a123de6a27.woff2") format('woff2');
+    unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+  @font-face { font-family:'Space Mono'; font-style:normal; font-weight:400; font-display:swap;
+    src:url("assets/cb8571e7-f004-4230-bb76-6f01e5a925ae.woff2") format('woff2');
+    unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+  @font-face { font-family:'Space Mono'; font-style:normal; font-weight:700; font-display:swap;
+    src:url("assets/99961910-d275-4c3c-85e9-a3e294237f62.woff2") format('woff2');
+    unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+
+  * { box-sizing:border-box; }
+  body { margin:0; background:#000; color:#fff; font-family:'Chakra Petch',sans-serif; min-height:100vh; }
+  a { color:#12ffd4; text-decoration:none; }
+  a:hover { color:#a3ff12; }
+
+  .td-nav { position:sticky; top:0; z-index:50; display:flex; align-items:center; justify-content:space-between;
+            padding:16px 40px; background:rgba(0,0,0,.72); backdrop-filter:blur(24px); border-bottom:1px solid rgba(255,255,255,.08); }
+  .td-logo { width:40px; height:40px; border-radius:12px; object-fit:cover; object-position:50% 18%; border:2px solid transparent;
+             background:linear-gradient(#000,#000) padding-box,linear-gradient(135deg,#ff2d9b,#a020ff,#12ffd4,#a3ff12) border-box; }
+  .td-wordmark { font-family:'Michroma',sans-serif; font-size:16px; letter-spacing:.06em; text-shadow:0.125em 0.125em 0 rgba(163,255,18,.55); }
+  .td-btn { padding:10px 22px; border-radius:100px; background:linear-gradient(135deg,#ff2d9b,#a020ff); color:#000; font-weight:700;
+            font-family:'Chakra Petch',sans-serif; font-size:13px; letter-spacing:.08em; box-shadow:inset 0 1px 4px rgba(255,255,255,.4); cursor:pointer; }
+
+  .td-shell { position:relative; overflow:hidden; background:radial-gradient(120% 90% at 75% 15%,#2a0a26,#000 60%); }
+  .td-wrap { position:relative; max-width:1200px; margin:0 auto; padding:80px 40px 90px;
+             display:grid; grid-template-columns:1fr 1.05fr; gap:56px; align-items:start; }
+  .td-h1 { font-family:'Michroma',sans-serif; font-size:44px; line-height:1.1; margin:0; }
+  .td-h1 span { background:linear-gradient(120deg,#ff2d9b,#a020ff,#12ffd4,#a3ff12); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  .td-lede { font-size:16px; line-height:1.7; color:rgba(255,255,255,.6); margin:24px 0 0; max-width:440px; }
+  .td-aside { margin-top:34px; display:flex; flex-direction:column; gap:14px; }
+  .td-aside-item { font-size:15px; line-height:1.6; color:rgba(255,255,255,.55); }
+  .td-aside-label { font-family:'Space Mono',monospace; font-size:11px; letter-spacing:.15em; color:rgba(255,255,255,.4); display:block; margin-bottom:6px; }
+
+  .td-card { border-radius:22px; padding:32px; background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.1);
+             backdrop-filter:blur(20px); position:relative; overflow:hidden; }
+  .td-card::before { content:""; position:absolute; inset:0; background:radial-gradient(100% 80% at 100% 0%,rgba(255,45,155,.18),transparent 60%); pointer-events:none; }
+  .td-field { position:relative; margin-bottom:20px; }
+  .td-field label { display:block; font-family:'Space Mono',monospace; font-size:9px; letter-spacing:.25em;
+                    color:rgba(255,255,255,.55); margin-bottom:8px; }
+  .td-field input, .td-field textarea {
+      width:100%; background:rgba(0,0,0,.45); border:1px solid rgba(255,255,255,.14); border-radius:14px;
+      padding:13px 15px; color:#fff; font-family:'Chakra Petch',sans-serif; font-size:15px; line-height:1.5; }
+  .td-field textarea { min-height:150px; resize:vertical; }
+  .td-field input::placeholder, .td-field textarea::placeholder { color:rgba(255,255,255,.28); }
+  .td-field input:focus, .td-field textarea:focus { outline:none; border-color:#12ffd4; box-shadow:0 0 0 3px rgba(18,255,212,.16); }
+  .td-field input:user-invalid, .td-field textarea:user-invalid { border-color:#ff2d9b; }
+  .td-hp { position:absolute; left:-9999px; opacity:0; height:0; overflow:hidden; }
+
+  .td-submit { position:relative; width:100%; padding:16px 34px; border:none; border-radius:100px;
+               background:linear-gradient(135deg,#ff2d9b,#a020ff); color:#000; font-family:'Chakra Petch',sans-serif;
+               font-weight:700; font-size:15px; letter-spacing:.08em; cursor:pointer;
+               box-shadow:inset 0 2px 6px rgba(255,255,255,.4),0 0 40px rgba(255,45,155,.35); }
+  .td-submit:disabled { opacity:.55; cursor:progress; }
+  .td-status { margin:16px 0 0; font-family:'Space Mono',monospace; font-size:12px; line-height:1.6; min-height:1em; }
+  .td-status.ok { color:#a3ff12; }
+  .td-status.err { color:#ff2d9b; }
+  .td-note { margin:18px 0 0; font-family:'Space Mono',monospace; font-size:10px; line-height:1.7; color:rgba(255,255,255,.35); }
+
+  .td-footer { border-top:1px solid rgba(255,255,255,.08); padding:30px 40px; display:flex; justify-content:space-between;
+               align-items:center; max-width:1200px; margin:0 auto; }
+
+  @media (max-width: 980px) {
+    .td-wrap { grid-template-columns:1fr !important; padding:56px 24px 70px; gap:36px; }
+    .td-h1 { font-size:32px; }
+    .td-nav { padding:12px 20px; }
+    .td-footer { flex-direction:column; gap:14px; text-align:center; }
+  }
+  @media (max-width: 520px) {
+    .td-h1 { font-size:26px; }
+    .td-wrap { padding-left:18px; padding-right:18px; }
+    .td-card { padding:24px; }
+  }
+</style>
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <div class="td-nav">
+    <a href="index.html" style="display:flex;align-items:center;gap:14px;color:inherit;">
+      <img src="assets/ffce3ace-3cae-4ec6-afda-9d4d9176649e.png" alt="TrailDog" class="td-logo">
+      <div class="td-wordmark">TRAILDOG</div>
+    </a>
+    <div style="display:flex;align-items:center;gap:22px;">
+      <a href="index.html#roast" style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.15em;color:rgba(255,255,255,.55);">HOME</a>
+      <a href="https://apps.apple.com/app/id6789243952" style="color:inherit;"><div class="td-btn">GET THE APP</div></a>
+    </div>
+  </div>
+
+  <!-- ============ CONTACT ============ -->
+  <div class="td-shell">
+    <div class="td-wrap">
+
+      <div>
+        <h1 class="td-h1">Get in <span>touch!</span></h1>
+        <p class="td-lede">Bug, idea, a stat that looks wrong, or a trail you think we should come visit? We'd love to hear from you!</p>
+        <p class="td-lede">We are a tiny team from the UK and we respond to all messages personally.</p>
+
+        <div class="td-aside">
+          <div class="td-aside-item">
+            <span class="td-aside-label">Prefer email?</span>
+            <a href="mailto:jackmecklenburgh@gmail.com">jackmecklenburgh@gmail.com</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="td-card">
+        <!-- FormSubmit: no account. The first real submission triggers a one-off
+             confirmation email to the address below; click its link and the form is live. -->
+        <form id="td-contact-form" action="https://formsubmit.co/jackmecklenburgh@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="New contact form message from ridetraildog.com">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://ridetraildog.com/contact.html?sent=1">
+          <!-- honeypot: bots fill it, humans never see it -->
+          <div class="td-hp" aria-hidden="true"><label>Do not fill this in<input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></div>
+
+          <div class="td-field">
+            <label for="td-name">NAME</label>
+            <input id="td-name" name="name" type="text" required maxlength="80" autocomplete="name" placeholder="Doggy420">
+          </div>
+          <div class="td-field">
+            <label for="td-email">EMAIL</label>
+            <input id="td-email" name="email" type="email" required maxlength="120" autocomplete="email" placeholder="you@example.com">
+          </div>
+          <div class="td-field">
+            <label for="td-message">MESSAGE</label>
+            <textarea id="td-message" name="message" required maxlength="4000" placeholder="Tell us what happened, what you were riding, and what you expected instead."></textarea>
+          </div>
+
+          <button type="submit" class="td-submit">SEND IT</button>
+          <p id="td-status" class="td-status" role="status" aria-live="polite"></p>
+          <p class="td-note">We use what you send here only to reply to you. Nothing else. See the <a href="privacy.html">privacy policy</a>.</p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ============ FOOTER ============ -->
+  <div class="td-footer">
+    <div style="display:flex;align-items:center;gap:10px;">
+      <img src="assets/ffce3ace-3cae-4ec6-afda-9d4d9176649e.png" alt="" style="width:28px;height:28px;border-radius:8px;object-fit:cover;object-position:50% 18%;">
+      <span style="font-family:'Michroma',sans-serif;font-size:11px;letter-spacing:.1em;">TRAILDOG</span>
+    </div>
+    <div style="font-family:'Space Mono',monospace;font-size:10px;color:rgba(255,255,255,.35);">© 2026 TrailDog. No egos were spared in the making of this app.<br>Trail data © <a href="https://www.openstreetmap.org/copyright" style="color:rgba(255,255,255,.45);">OpenStreetMap contributors</a></div>
+    <div style="display:flex;gap:20px;font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.1em;">
+      <a href="privacy.html" style="color:rgba(255,255,255,.45);">PRIVACY</a>
+      <a href="support.html" style="color:rgba(255,255,255,.45);">SUPPORT</a>
+      <a href="contact.html" style="color:rgba(255,255,255,.45);">CONTACT</a>
+    </div>
+  </div>
+
+<script>
+(function () {
+  var form = document.getElementById('td-contact-form');
+  var status = document.getElementById('td-status');
+  var button = form.querySelector('.td-submit');
+
+  // Landing back here after a no-JS submit redirect.
+  if (new URLSearchParams(location.search).get('sent') === '1') {
+    status.className = 'td-status ok';
+    status.textContent = 'Message sent. We will get back to you.';
+  }
+
+  form.addEventListener('submit', function (event) {
+    if (!form.reportValidity()) return;
+    event.preventDefault();
+
+    button.disabled = true;
+    button.textContent = 'SENDING...';
+    status.className = 'td-status';
+    status.textContent = '';
+
+    var payload = Object.fromEntries(new FormData(form).entries());
+    delete payload._next; // only relevant to the no-JS path
+
+    fetch('https://formsubmit.co/ajax/jackmecklenburgh@gmail.com', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(payload)
+    })
+      .then(function (response) { return response.json().catch(function () { return {}; }); })
+      .then(function (result) {
+        // FormSubmit returns success as the string "true", not a boolean.
+        if (result.success === true || result.success === 'true') {
+          form.reset();
+          status.className = 'td-status ok';
+          status.textContent = 'Message sent. We will get back to you.';
+          button.textContent = 'SENT';
+        } else {
+          throw new Error(result.message || 'Send failed');
+        }
+      })
+      .catch(function () {
+        status.className = 'td-status err';
+        status.innerHTML = 'That did not send. Email us directly at <a href="mailto:jackmecklenburgh@gmail.com">jackmecklenburgh@gmail.com</a>.';
+        button.disabled = false;
+        button.textContent = 'SEND IT';
+      });
+  });
+})();
+</script>
+</body></html>
