@@ -115,7 +115,7 @@
         <div class="td-aside">
           <div class="td-aside-item">
             <span class="td-aside-label">Prefer email?</span>
-            <a href="mailto:jackmecklenburgh@gmail.com">jackmecklenburgh@gmail.com</a>
+            <a href="mailto:ridetraildog@gmail.com">ridetraildog@gmail.com</a>
           </div>
         </div>
       </div>
@@ -123,7 +123,7 @@
       <div class="td-card">
         <!-- FormSubmit: no account. The first real submission triggers a one-off
              confirmation email to the address below; click its link and the form is live. -->
-        <form id="td-contact-form" action="https://formsubmit.co/jackmecklenburgh@gmail.com" method="POST">
+        <form id="td-contact-form" action="https://formsubmit.co/ridetraildog@gmail.com" method="POST">
           <input type="hidden" name="_subject" value="New contact form message from ridetraildog.com">
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_captcha" value="false">
@@ -191,7 +191,7 @@
     var payload = Object.fromEntries(new FormData(form).entries());
     delete payload._next; // only relevant to the no-JS path
 
-    fetch('https://formsubmit.co/ajax/jackmecklenburgh@gmail.com', {
+    fetch('https://formsubmit.co/ajax/ridetraildog@gmail.com', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
       body: JSON.stringify(payload)
@@ -210,7 +210,7 @@
       })
       .catch(function () {
         status.className = 'td-status err';
-        status.innerHTML = 'That did not send. Email us directly at <a href="mailto:jackmecklenburgh@gmail.com">jackmecklenburgh@gmail.com</a>.';
+        status.innerHTML = 'That did not send. Email us directly at <a href="mailto:ridetraildog@gmail.com">ridetraildog@gmail.com</a>.';
         button.disabled = false;
         button.textContent = 'SEND IT';
       });
