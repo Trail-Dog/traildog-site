@@ -17,25 +17,38 @@
 </head>
 <body>
 <h1>TrailDog — Privacy Policy</h1>
-<p class="muted">Last updated: 2 August 2026</p>
+<p class="muted">Last updated: 29 September 2026</p>
 
 
 
-<h2>Using TrailDog without an account</h2>
-<p>You can record rides without signing in. Everything stays in a private database on your
-device, and deleting the app deletes it. The only things that leave your phone are the network
-requests described under <a href="#services">Services we send data to</a>.</p>
+<h2>An account is required</h2>
+<p>You sign in before recording a ride. Your rides are stored on your phone and backed up to
+your account, so they can be restored after reinstalling TrailDog or changing phones. The data
+stored on our server and the other services the app uses are described below.</p>
 
 <h2>What we collect while you ride</h2>
-<p>While you are recording a ride — and only then — TrailDog collects your
+<p>While you are recording a ride, TrailDog collects your
 <strong>location</strong> (GPS route, speed, altitude) and <strong>motion-sensor data</strong>
 (accelerometer, gyroscope, barometer). These are what produce your ride stats, your descent
 scores and your Rider Index.</p>
 
-<h2>Background location</h2>
-<p>Recording continues while your phone is locked or in your pocket — that is what the
-"always"-style location permission is for. Location is collected <strong>only while a ride you
-started is recording</strong>. TrailDog does not track you at any other time.</p>
+<h2>Background location and ride reminders</h2>
+<p>Recording continues while your phone is locked or in your pocket. Opening the Record
+screen also starts GPS so your position is ready when you press START; these early fixes
+are not saved as a ride.</p>
+<p>Ride reminders work automatically when notifications are allowed, subject to your other
+iPhone permissions. With Always and Precise Location access, TrailDog uses region entry and
+significant location changes to notice nearby riding spots in the background. With Motion
+&amp; Fitness access, it can also read recent cycling activity to suggest that you start
+recording. This does not automatically record a ride or create a continuous GPS track.</p>
+<p>Remembered TrailDog starting spots, nearby mapped spots and reminder timings are stored
+on your iPhone for your account. These reminder records are not uploaded to our server.
+To find mapped riding spots, the app sends an approximate search centre, rounded to
+0.01 degrees, to OpenStreetMap's Overpass service, which also receives your connection's IP
+address. No account ID or ride history is sent with this lookup.</p>
+<p>The Notifications switch in TrailDog Settings turns notifications and reminder monitoring
+off. You can also change notification, location and Motion &amp; Fitness permissions in iPhone
+Settings. TrailDog's Location permissions link opens its page there.</p>
 
 <h2>What we store on our server, if you have an account</h2>
 <p>Creating an account turns on sync. From then on the following is stored on our servers:</p>
@@ -53,8 +66,8 @@ started is recording</strong>. TrailDog does not track you at any other time.</p
   are built on.</td></tr>
   <tr><th>Friends</th><td>Who you have sent requests to, who has sent them to you, and who you
   are friends with.</td></tr>
-  <tr><th>Devices</th><td>An install identifier, your device name, model, iOS version and app
-  version, so we can tell which build a problem came from.</td></tr>
+  <tr><th>Notifications</th><td>If notifications are allowed, an Apple push notification
+  device token linked to your account, so notifications can reach this phone.</td></tr>
   <tr><th>Logs</th><td>Technical records of what the app did — see
   <a href="#logs">Diagnostic logs</a>.</td></tr>
 </table>
@@ -84,11 +97,13 @@ are kept for <strong>90 days</strong> and then deleted.</p>
   <li><strong>Supabase</strong> — hosts our database, file storage and sign-in. Everything in
   the table above is stored there on our behalf.</li>
   <li><strong>Apple</strong> — Sign in with Apple, if you choose it; geocoding, to turn your
-  ride's start point into a place name; and Apple Maps imagery.</li>
+  ride's start point into a place name; Apple Maps imagery; and delivery of push notifications.
+  Ride reminders are generated locally on your iPhone.</li>
   <li><strong>Open-Meteo</strong> — receives approximate ride coordinates and returns the
   weather for your ride. No account or identifier is sent.</li>
   <li><strong>OpenStreetMap (Overpass API)</strong> — receives your ride's bounding box to
-  match the trails you rode. No account or identifier is sent. Trail data © OpenStreetMap
+  match the trails you rode, and an approximate search centre for nearby riding spots when
+  reminders are enabled. No account or identifier is sent. Trail data © OpenStreetMap
   contributors.</li>
 </ul>
 <p>We do not use advertising or analytics SDKs, and we do not sell or rent your data.</p>
